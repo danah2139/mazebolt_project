@@ -5,8 +5,8 @@ import os
 # mb-exam-4
 V1_BASE_URL = 'https://www.googleapis.com/compute/v1/projects/mbexam-4'
 print('!!!!!!!!!!!!',os.path.dirname(__file__))
-#google_key_file = os.path.dirname(__file__) + "/mbexam-4-688583a9e212.p12"
-google_key_file = '//mazebolt_project/django/mazebolt_project/mazebolt_project' + "/mbexam-4-688583a9e212.p12" 
+path = os.path.dirname(__file__) if os.path.dirname(__file__) else '//mazebolt_project/django/mazebolt_project/mazebolt_project'
+google_key_file = path + "/mbexam-4-688583a9e212.p12" 
 client_email = 'mb-exam-4@mbexam-4.iam.gserviceaccount.com'
 base_image_name = V1_BASE_URL + '/global/images/attacker'
 
