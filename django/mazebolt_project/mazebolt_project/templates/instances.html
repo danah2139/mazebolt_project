@@ -1,0 +1,47 @@
+{% extends "index.html" %}
+{% block content %}
+<h1>Instances View</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"> </th>
+        <th scope="col">Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+        <form method="post">
+          {% csrf_token %}
+              {% for instance in all_instances %}
+                <tr>
+		            <th scope="row"><input type="checkbox"  name="{{instance.name}}"/></th>
+                    <td>{{ instance.name }}</td>
+                    <td>{{ instance.status }}</td>
+                    <td>{{ instance.created_at }}</td>
+                </tr>
+            {% endfor %}
+            <div class="btn-container">
+                <input type="submit" value="Start Test" name='start' formaction='create_test/'/>
+                <input type="submit" name='terminated_selected' value='terminate' formaction='terminate_instance/'/>
+            </div>
+            {% if error_message_select %} <p><strong>{{error_message_select}}</strong></p>{% endif %}
+        </form>
+        
+
+    </tbody>
+ 
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="instance_count">Instances Count:</label>
+    <input id="instance_count" type="number" name="instance_count">
+    <button type="submit" class="btn btn-success">
+        <i style="margin-right: 5px"  class="icon_lock-open"></i>
+        <b>Start Instances Creation!</b>
+    </button>
+    {% if error_message_count %} <p><strong>{{error_message_count}}</strong></p>{% endif %}
+  </form>
+{% endblock %}
+
+

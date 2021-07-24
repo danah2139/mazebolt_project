@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% block content %}
+<h1>Start Test View</h1>
+<h3>Involved Instances Name</h3>
+<form action="../tests/" method="post">
+    {% csrf_token %}
+    <ul name={{instance_list}}>    
+      {% for instance in filter_instance %}
+      <li >{{instance.name}}</li>
+      {% endfor %}
+    </ul>
+    <label for="test_name"> Insert Test Name</label>
+    <input type="text" name="test_name"/>
+    <p>Command to execute</p>
+    <input type="radio" id="ping" name="command" value="ping">
+    <label for="ping">ping</label><br>
+    <input type="radio" id="wget" name="command" value="wget">
+    <label for="wget">wget</label>
+    <input type="submit" value="Start">
+</form>
+
+<form action="/" method="get">
+    <input type="submit" value="Cancel">
+</form>
+   {% if error_message %} <p><strong>{{error_message}}</strong></p>{% endif %}
+
+
+{% endblock %}

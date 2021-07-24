@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+{% block content %}
+<h1>Tests View</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"> </th>
+        <th scope="col">Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">Number of instances</th>
+        <th scope="col">Started At</th>
+        <th scope="col"> Command</th>
+      </tr>
+    </thead>
+    <tbody>
+    <form action ='../stop_test_checked/' method="post">
+        {% csrf_token %}
+        {% for test in all_tests %}
+      <tr>
+        <th scope="row"><input type="checkbox" name="test_checkbox" id="test_checkbox" name="{{test.name}}"></th>
+        <td>{{ test.name }}</td>
+        <td>{{ test.status }}</td>
+        <td>{{ test.number_of_instaces }}</td>
+        <td>{{ test.start_test_at }}</td>
+        <td>{{ test.command }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <div class="btn-container">
+      <input type="submit" name='stop' value='Stop' >
+  </div>
+    {% if error_message_select %} <p><strong>{{error_message_select}}</strong></p>{% endif %}
+    </form>
+  {% endblock %}
