@@ -69,7 +69,7 @@ def test(request):
         #add_test(host_list,command,test_name)
         print(host_list,'host_list')
         try:
-            new_test = Test(name = test_name , status = 'RUNNING',number_of_instaces=len(host_list),start_test_at=timezone.now(),command=command)
+            new_test = Test(name = test_name , status = 'RUNNING',start_test_at=timezone.now(),command=command)
             new_test.save()
             new_test.instances.set(NEW_TEST_INSTANCES)
         except IntegrityError:

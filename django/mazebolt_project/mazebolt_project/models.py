@@ -16,7 +16,6 @@ class Instance(models.Model):
 class Test(models.Model):
     name = models.CharField(max_length=100,unique=True)
     status = models.CharField(max_length=100)
-    number_of_instaces = models.IntegerField()
     start_test_at = models.DateTimeField()
     command = models.CharField(max_length=100)
     instances = models.ManyToManyField(Instance)
@@ -26,4 +25,6 @@ class Test(models.Model):
 
     def __str__(self):
         return self.name
-
+    @property
+    def number_of_instaces(self):
+      return self.instances.count()
