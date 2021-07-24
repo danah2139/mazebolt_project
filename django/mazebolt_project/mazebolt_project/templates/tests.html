@@ -17,7 +17,7 @@
         {% csrf_token %}
         {% for test in all_tests %}
       <tr>
-        <th scope="row"><input type="checkbox" name="test_checkbox" id="test_checkbox" name="{{test.name}}"></th>
+        <th scope="row"><input type="checkbox" id="test_checkbox" name="{{test.name}}"></th>
         <td>{{ test.name }}</td>
         <td>{{ test.status }}</td>
         <td>{{ test.number_of_instaces }}</td>
