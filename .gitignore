@@ -1,0 +1,45 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+docs/_build/
+
+
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+.flaskenv
+*.pyc
+*.pyo
+env/
+env*
+dist/
+*.egg
+*.egg-info/
+_mailinglist
+.tox/
+.cache/
+.pytest_cache/
+.idea/
+
+venv
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+*,cover
+
+.p12
+
+*.p12
+
+__pycache__
