@@ -761,3 +761,141 @@ NameError: name 'FileNotFoundError' is not defined
 [Sat Jul 24 04:48:59.698177 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 116.75.193.249:42723] Not Found: /GponForm/diag_Form
 [Sat Jul 24 04:56:18.056592 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:63154] Not Found: /favicon.ico
 [Sat Jul 24 05:58:57.128856 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 94.102.49.198:52668] Not Found: /level/15/exec/-/sh/run/CR
+[Sat Jul 24 07:04:20.500475 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 143.110.248.78:43258] Not Found: /favicon.ico
+[Sat Jul 24 07:04:20.676495 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 143.110.248.78:43680] Not Found: /robots.txt
+[Sat Jul 24 08:10:31.844932 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 205.185.115.135:58268] Not Found: /boaform/admin/formLogin
+[Sat Jul 24 08:46:45.805313 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 209.141.41.98:60140] Not Found: /boaform/admin/formLogin
+[Sat Jul 24 10:23:42.074147 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 194.49.69.242:59745] Not Found: /.env
+[Sat Jul 24 10:23:42.246349 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 194.49.69.242:59786] Forbidden (CSRF cookie not set.): /
+[Sat Jul 24 12:05:54.480856 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 180.149.125.175:34234] Not Found: /stalker_portal/server/tools/auth_simple.php
+[Sat Jul 24 13:01:20.447188 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:60949] Not Found: /favicon.ico
+[Sat Jul 24 13:02:10.367389 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.67.76.226:59943] dict_keys(['start', 'csrfmiddlewaretoken', 'mbexam-8c77c0c8-74c3-461f-8839-4a9181f276dc', 'mbexam-bd23d418-2bb4-4da2-a12b-3d74eb9cc916'])
+[Sat Jul 24 13:02:20.427529 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] POST
+[Sat Jul 24 13:02:21.003770 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] check <QuerySet [<Instance: mbexam-8c77c0c8-74c3-461f-8839-4a9181f276dc>, <Instance: mbexam-bd23d418-2bb4-4da2-a12b-3d74eb9cc916>]>
+[Sat Jul 24 13:02:21.003841 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] ['10.132.0.10', '10.132.0.23'] host_list
+[Sat Jul 24 13:02:21.075481 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] Internal Server Error: /tests/
+[Sat Jul 24 13:02:21.075516 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] Traceback (most recent call last):
+[Sat Jul 24 13:02:21.075521 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+[Sat Jul 24 13:02:21.075525 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return self.cursor.execute(sql, params)
+[Sat Jul 24 13:02:21.075529 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+[Sat Jul 24 13:02:21.075533 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return self.cursor.execute(query, args)
+[Sat Jul 24 13:02:21.075549 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+[Sat Jul 24 13:02:21.075553 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     res = self._query(query)
+[Sat Jul 24 13:02:21.075556 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+[Sat Jul 24 13:02:21.075559 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     db.query(q)
+[Sat Jul 24 13:02:21.075562 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/MySQLdb/connections.py", line 259, in query
+[Sat Jul 24 13:02:21.075566 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     _mysql.connection.query(self, query)
+[Sat Jul 24 13:02:21.075569 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'test1' for key 'mazebolt_project_test.mazebolt_project_test_name_5d8779f1_uniq'")
+[Sat Jul 24 13:02:21.075573 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] 
+[Sat Jul 24 13:02:21.075576 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] The above exception was the direct cause of the following exception:
+[Sat Jul 24 13:02:21.075579 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] 
+[Sat Jul 24 13:02:21.075582 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] Traceback (most recent call last):
+[Sat Jul 24 13:02:21.075585 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+[Sat Jul 24 13:02:21.075589 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     response = get_response(request)
+[Sat Jul 24 13:02:21.075592 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+[Sat Jul 24 13:02:21.075595 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Sat Jul 24 13:02:21.075599 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/django/mazebolt_project/mazebolt_project/views.py", line 68, in test
+[Sat Jul 24 13:02:21.075602 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     new_test.save()
+[Sat Jul 24 13:02:21.075605 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/models/base.py", line 727, in save
+[Sat Jul 24 13:02:21.075608 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     force_update=force_update, update_fields=update_fields)
+[Sat Jul 24 13:02:21.075611 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/models/base.py", line 765, in save_base
+[Sat Jul 24 13:02:21.075615 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     force_update, using, update_fields,
+[Sat Jul 24 13:02:21.075618 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/models/base.py", line 868, in _save_table
+[Sat Jul 24 13:02:21.075621 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+[Sat Jul 24 13:02:21.075628 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/models/base.py", line 908, in _do_insert
+[Sat Jul 24 13:02:21.075631 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     using=using, raw=raw,
+[Sat Jul 24 13:02:21.075635 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+[Sat Jul 24 13:02:21.075638 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return getattr(self.get_queryset(), name)(*args, **kwargs)
+[Sat Jul 24 13:02:21.075641 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/models/query.py", line 1270, in _insert
+[Sat Jul 24 13:02:21.075645 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return query.get_compiler(using=using).execute_sql(returning_fields)
+[Sat Jul 24 13:02:21.075648 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+[Sat Jul 24 13:02:21.075651 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     cursor.execute(sql, params)
+[Sat Jul 24 13:02:21.075654 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+[Sat Jul 24 13:02:21.075658 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return super().execute(sql, params)
+[Sat Jul 24 13:02:21.075661 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+[Sat Jul 24 13:02:21.075664 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+[Sat Jul 24 13:02:21.075668 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+[Sat Jul 24 13:02:21.075671 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return executor(sql, params, many, context)
+[Sat Jul 24 13:02:21.075674 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+[Sat Jul 24 13:02:21.075678 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return self.cursor.execute(sql, params)
+[Sat Jul 24 13:02:21.075681 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+[Sat Jul 24 13:02:21.075684 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     raise dj_exc_value.with_traceback(traceback) from exc_value
+[Sat Jul 24 13:02:21.075687 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+[Sat Jul 24 13:02:21.075691 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return self.cursor.execute(sql, params)
+[Sat Jul 24 13:02:21.075694 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+[Sat Jul 24 13:02:21.075701 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     return self.cursor.execute(query, args)
+[Sat Jul 24 13:02:21.075704 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+[Sat Jul 24 13:02:21.075707 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     res = self._query(query)
+[Sat Jul 24 13:02:21.075710 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+[Sat Jul 24 13:02:21.075713 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     db.query(q)
+[Sat Jul 24 13:02:21.075717 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]   File "/mazebolt_project/venv/lib/python3.7/site-packages/MySQLdb/connections.py", line 259, in query
+[Sat Jul 24 13:02:21.075720 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167]     _mysql.connection.query(self, query)
+[Sat Jul 24 13:02:21.075723 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56167] django.db.utils.IntegrityError: (1062, "Duplicate entry 'test1' for key 'mazebolt_project_test.mazebolt_project_test_name_5d8779f1_uniq'")
+[Sat Jul 24 13:05:14.486853 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651] GET
+[Sat Jul 24 13:05:14.519429 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651] Internal Server Error: /tests/
+[Sat Jul 24 13:05:14.519475 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651] Traceback (most recent call last):
+[Sat Jul 24 13:05:14.519480 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+[Sat Jul 24 13:05:14.519485 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651]     response = get_response(request)
+[Sat Jul 24 13:05:14.519489 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 188, in _get_response
+[Sat Jul 24 13:05:14.519493 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651]     self.check_response(response, callback)
+[Sat Jul 24 13:05:14.519498 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 311, in check_response
+[Sat Jul 24 13:05:14.519502 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651]     "instead." % name
+[Sat Jul 24 13:05:14.519506 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:56651] ValueError: The view mazebolt_project.views.test didn't return an HttpResponse object. It returned None instead.
+[Sat Jul 24 13:05:17.270794 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968] GET
+[Sat Jul 24 13:05:17.295206 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968] Internal Server Error: /tests/
+[Sat Jul 24 13:05:17.295238 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968] Traceback (most recent call last):
+[Sat Jul 24 13:05:17.295243 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+[Sat Jul 24 13:05:17.295247 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968]     response = get_response(request)
+[Sat Jul 24 13:05:17.295251 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 188, in _get_response
+[Sat Jul 24 13:05:17.295272 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968]     self.check_response(response, callback)
+[Sat Jul 24 13:05:17.295275 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968]   File "/mazebolt_project/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 311, in check_response
+[Sat Jul 24 13:05:17.295278 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968]     "instead." % name
+[Sat Jul 24 13:05:17.295281 2021] [wsgi:error] [pid 20407:tid 139624663271168] [remote 109.226.50.8:50968] ValueError: The view mazebolt_project.views.test didn't return an HttpResponse object. It returned None instead.
+[Sat Jul 24 13:05:24.276518 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:64840] dict_keys(['start', 'csrfmiddlewaretoken'])
+[Sat Jul 24 13:20:54.778302 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:54066] dict_keys(['terminated_selected', 'csrfmiddlewaretoken'])
+[Sat Jul 24 13:20:54.778381 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:54066] []
+[Sat Jul 24 13:20:57.903383 2021] [wsgi:error] [pid 20407:tid 139624621258496] [remote 109.67.76.226:54066] dict_keys(['start', 'csrfmiddlewaretoken'])
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7efce2fa4a60>
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 622, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <generator object path at 0x7efce13179a8>
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/importlib/resources.py", line 190, in path
+NameError: name 'FileNotFoundError' is not defined
+[Sun Jul 25 17:35:22.516033 2021] [wsgi:error] [pid 26015:tid 139702551176960] [remote 198.98.59.211:34002] !!!!!!!!!!!! /mazebolt_project/django/mazebolt_project/mazebolt_project
+[Sun Jul 25 17:45:37.240591 2021] [wsgi:error] [pid 26015:tid 139702433580800] [remote 123.14.104.241:55675] Not Found: /setup.cgi
+[Sun Jul 25 17:57:52.915768 2021] [wsgi:error] [pid 26015:tid 139702551176960] [remote 61.163.158.87:52574] Not Found: /boaform/admin/formLogin
+[Sun Jul 25 19:12:50.599442 2021] [wsgi:error] [pid 26015:tid 139702551176960] [remote 93.174.89.216:47574] Not Found: /boaform/admin/formLogin
+[Sun Jul 25 20:13:24.981273 2021] [wsgi:error] [pid 26015:tid 139702433580800] [remote 192.241.223.31:37830] Not Found: /manager/text/list
+[Sun Jul 25 21:07:03.718582 2021] [wsgi:error] [pid 26015:tid 139702433580800] [remote 20.205.213.132:52504] Not Found: /.env
+[Sun Jul 25 21:07:04.084894 2021] [wsgi:error] [pid 26015:tid 139702551176960] [remote 20.205.213.132:52942] Forbidden (CSRF cookie not set.): /
+[Sun Jul 25 23:09:18.848014 2021] [wsgi:error] [pid 26015:tid 139702551176960] [remote 192.241.197.136:41714] Not Found: /manager/html
+[Sun Jul 25 23:44:19.015556 2021] [wsgi:error] [pid 26015:tid 139702551176960] [remote 190.93.152.242:53910] Not Found: /sql/sqlweb/index.php
+[Sun Jul 25 23:57:08.160940 2021] [wsgi:error] [pid 26015:tid 139702433580800] [remote 181.39.216.60:33828] Not Found: /sql/sqlweb/index.php
+[Sun Jul 25 23:57:08.518898 2021] [wsgi:error] [pid 26015:tid 139702551176960] [remote 181.39.216.60:33982] Not Found: /phpMyAdmin/index.php
+[Sun Jul 25 23:57:08.877015 2021] [wsgi:error] [pid 26015:tid 139702433580800] [remote 181.39.216.60:34128] Not Found: /phpMyAdmin/index.php
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f0f00f41a60>
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 622, in __del__
+NameError: name 'ResourceWarning' is not defined
+[Mon Jul 26 00:18:40.760524 2021] [wsgi:error] [pid 26917:tid 139702559831808] [client 74.102.39.43:37160] mod_wsgi (pid=26917): Request data read error when proxying data to daemon process: Partial results are valid but processing is incomplete.
+[Mon Jul 26 00:18:41.037314 2021] [wsgi:error] [pid 26915:tid 139702551168768] [remote 74.102.39.43:37160] !!!!!!!!!!!! /mazebolt_project/django/mazebolt_project/mazebolt_project
+[Mon Jul 26 00:18:41.050511 2021] [wsgi:error] [pid 26915:tid 139702551168768] [remote 74.102.39.43:37160] Not Found: /cgi-bin/mainfunction.cgi
+[Mon Jul 26 02:01:51.914716 2021] [wsgi:error] [pid 26915:tid 139702534366976] [remote 192.241.211.223:58642] Not Found: /portal/redlion
+[Mon Jul 26 02:13:44.075780 2021] [wsgi:error] [pid 26915:tid 139702551168768] [remote 209.141.50.63:60776] Not Found: /boaform/admin/formLogin
+[Mon Jul 26 02:20:19.074198 2021] [wsgi:error] [pid 26915:tid 139702534366976] [remote 192.241.212.215:48764] Not Found: /actuator/health
+[Mon Jul 26 04:03:27.530251 2021] [wsgi:error] [pid 26915:tid 139702534366976] [remote 45.95.147.14:57953] Not Found: /robots.txt
+[Mon Jul 26 04:43:37.434222 2021] [wsgi:error] [pid 26915:tid 139702551168768] [remote 209.141.41.98:38260] Not Found: /boaform/admin/formLogin
+[Mon Jul 26 05:13:08.515975 2021] [wsgi:error] [pid 26915:tid 139702534366976] [remote 205.185.120.237:37238] Not Found: /config/getuser
+[Mon Jul 26 08:15:45.989642 2021] [wsgi:error] [pid 26915:tid 139702534366976] [remote 45.146.164.110:49484] Not Found: /api/jsonws/invoke
+[Mon Jul 26 08:15:45.991113 2021] [wsgi:error] [pid 26915:tid 139702551168768] [remote 45.146.164.110:49488] Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[Mon Jul 26 08:15:46.086381 2021] [wsgi:error] [pid 26915:tid 139702525957888] [remote 45.146.164.110:33278] Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[Mon Jul 26 08:15:46.133465 2021] [wsgi:error] [pid 26915:tid 139702551168768] [remote 45.146.164.110:39222] Not Found: /solr/admin/info/system
+[Mon Jul 26 08:15:46.181564 2021] [wsgi:error] [pid 26915:tid 139702525957888] [remote 45.146.164.110:43874] Not Found: /index.php
+[Mon Jul 26 08:15:46.279109 2021] [wsgi:error] [pid 26915:tid 139702551168768] [remote 45.146.164.110:53026] Not Found: /wp-content/plugins/wp-file-manager/readme.txt
+[Mon Jul 26 08:15:46.339075 2021] [wsgi:error] [pid 26915:tid 139702525957888] [remote 45.146.164.110:58900] Not Found: /_ignition/execute-solution
+[Mon Jul 26 08:15:46.472042 2021] [wsgi:error] [pid 26915:tid 139702551168768] [remote 45.146.164.110:44104] Not Found: /console/
+[Mon Jul 26 08:15:46.564623 2021] [wsgi:error] [pid 26915:tid 139702525957888] [remote 45.146.164.110:53922] Not Found: /Autodiscover/Autodiscover.xml
+[Mon Jul 26 09:34:46.802143 2021] [wsgi:error] [pid 26915:tid 139702551168768] [remote 209.141.41.98:57462] Not Found: /boaform/admin/formLogin
+[Mon Jul 26 10:02:02.176990 2021] [wsgi:error] [pid 26915:tid 139702525957888] [remote 205.185.115.135:54860] Not Found: /boaform/admin/formLogin
